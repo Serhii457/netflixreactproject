@@ -14,8 +14,8 @@ function Rating() {
         <div>
             <div className="rating">
                 {rating.map((value, index) => (
-                    value ? <FontAwesomeIcon icon="fa-solid fa-star" className="activeStar fa-lg" onClick={() => changeRatingFn(index)}/>
-                          : <FontAwesomeIcon icon="fa-regular fa-star" className="inactiveStar fa-lg" onClick={() => changeRatingFn(index)} />
+                    value ? <FontAwesomeIcon key={index} icon="fa-solid fa-star" className="activeStar fa-lg" onClick={() => changeRatingFn(index)}/>
+                          : <FontAwesomeIcon key={index} icon="fa-regular fa-star" className="inactiveStar fa-lg" onClick={() => changeRatingFn(index)} />
                           ))}
 
             </div>
